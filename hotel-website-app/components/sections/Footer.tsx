@@ -33,7 +33,7 @@ export function Footer() {
             </p>
             <div style={{ display: "flex", gap: "12px" }}>
               {([Instagram, Facebook, Twitter] as React.ElementType[]).map((Icon, i) => (
-                
+                </
                   key={i}
                   href="#"
                   style={{

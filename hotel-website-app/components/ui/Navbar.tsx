@@ -76,7 +76,7 @@ export function Navbar() {
           <nav style={{ display: "flex", alignItems: "center", gap: "36px" }}
                className="hidden-mobile">
             {LINKS.map(({ label, href }) => (
-              
+              </
                 key={label}
                 href={href}
                 style={{
