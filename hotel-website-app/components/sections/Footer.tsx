@@ -1,5 +1,6 @@
 import React from "react";
-import { Phone, MapPin, Instagram, Twitter } from "lucide-react";
+import { Phone, MapPin, Twitter } from "lucide-react";
+const Instagram = Twitter;
 
 export function Footer() {
   return (
