@@ -121,7 +121,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
           style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}
         >
-          
+          <a
             href="#booking"
             style={{
               padding:        "16px 40px",
@@ -147,7 +147,7 @@ export function Hero() {
             Book Your Stay
           </a>
 
-          
+          <a
             href="#rooms"
             style={{
               padding:        "16px 40px",
