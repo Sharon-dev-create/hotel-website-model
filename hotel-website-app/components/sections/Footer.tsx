@@ -1,6 +1,7 @@
 import React from "react";
-import { Phone, MapPin, Twitter } from "lucide-react";
-const Instagram = Twitter;
+import { Phone, MapPin, Mail, Globe } from "lucide-react";
+const Instagram = Mail;
+const Twitter = Globe;
 
 export function Footer() {
   return (
