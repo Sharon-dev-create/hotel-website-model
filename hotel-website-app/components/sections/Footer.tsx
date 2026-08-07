@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, MapPin, Instagram, Facebook, Twitter } from "lucide-react";
+import { Phone, MapPin, Instagram, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
@@ -32,8 +32,8 @@ export function Footer() {
               A sanctuary of comfort and elegance in the heart of Jos, Plateau State, Nigeria.
             </p>
             <div style={{ display: "flex", gap: "12px" }}>
-              {([Instagram, Facebook, Twitter] as React.ElementType[]).map((Icon, i) => (
-                </
+              {([Instagram, Twitter] as React.ElementType[]).map((Icon, i) => (
+                <a
                   key={i}
                   href="#"
                   style={{
@@ -65,7 +65,7 @@ export function Footer() {
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "12px" }}>
               {["Home", "Rooms", "Gallery", "Amenities", "About", "Contact"].map(link => (
                 <li key={link}>
-                  
+                  <a
                     href={`#${link.toLowerCase()}`}
                     style={{ fontSize: "14px", color: "var(--grey)", textDecoration: "none", transition: "color 0.2s" }}
                     onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = "var(--gold)"; }}
@@ -86,7 +86,7 @@ export function Footer() {
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "12px" }}>
               {["Deluxe Room", "Executive Room", "Suite"].map(r => (
                 <li key={r}>
-                  
+                  <a
                     href="#rooms"
                     style={{ fontSize: "14px", color: "var(--grey)", textDecoration: "none", transition: "color 0.2s" }}
                     onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = "var(--gold)"; }}
@@ -113,10 +113,7 @@ export function Footer() {
               </div>
               <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
                 <Phone size={14} color="var(--gold)" />
-                
-                  href="tel:+2348000000000"
-                  style={{ fontSize: "13px", color: "var(--grey)", textDecoration: "none" }}
-                >
+                <a href="tel:+2348000000000" style={{ fontSize: "13px", color: "var(--grey)", textDecoration: "none" }}>
                   +234 800 000 0000
                 </a>
               </div>

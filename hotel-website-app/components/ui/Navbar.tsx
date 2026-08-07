@@ -78,7 +78,7 @@ export function Navbar() {
             style={{ display: "flex", alignItems: "center", gap: "36px" }}
           >
             {LINKS.map(({ label, href }) => (
-              
+              <a 
                 key={label}
                 href={href}
                 style={{
@@ -97,7 +97,7 @@ export function Navbar() {
               </a>
             ))}
 
-            
+            <a
               href="#booking"
               style={{
                 padding:        "10px 24px",
@@ -158,7 +158,7 @@ export function Navbar() {
             }}
           >
             {LINKS.map(({ label, href }) => (
-              
+              <a
                 key={label}
                 href={href}
                 onClick={() => setMenuOpen(false)}
@@ -175,7 +175,7 @@ export function Navbar() {
               </a>
             ))}
 
-            
+              <a
               href="#booking"
               onClick={() => setMenuOpen(false)}
               style={{

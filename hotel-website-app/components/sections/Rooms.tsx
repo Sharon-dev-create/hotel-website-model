@@ -153,7 +153,7 @@ export function Rooms() {
                     </div>
                   </div>
 
-                  
+                  <a
                     href="#booking"
                     style={{
                       padding:        "10px 20px",
