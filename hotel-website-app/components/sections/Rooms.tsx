@@ -8,6 +8,7 @@ import { Wifi, Coffee, Tv, Wind, Bath, Users } from "lucide-react";
 const ROOMS = [
   {
     name:     "Deluxe Room",
+    slug:     "deluxe",
     price:    "₦35,000",
     per:      "per night",
     tagline:  "Comfort redefined",
