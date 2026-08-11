@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Phone, MapPin, Mail, Globe } from "lucide-react";
 const Instagram = Mail;

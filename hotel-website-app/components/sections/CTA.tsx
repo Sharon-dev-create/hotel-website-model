@@ -58,7 +58,7 @@ export function CTA() {
           Book your room today and experience the Novel Suite difference.
         </p>
 
-        
+        <a
           href="#booking"
           style={{
             display:       "inline-flex",
