@@ -22,6 +22,8 @@ const ROOMS = [
   },
   {
     name:     "Executive Room",
+    slug:     "executive",
+    image:    "/images/rooms/room2.webp",
     price:    "₦55,000",
     per:      "per night",
     tagline:  "For the discerning traveler",
@@ -35,6 +37,8 @@ const ROOMS = [
   {
     name:     "Suite",
     price:    "₦90,000",
+    slug:     "suite",
+    image:    "/images/rooms/room3.webp",
     per:      "per night",
     tagline:  "The pinnacle of luxury",
     features: ["Separate living room", "Jacuzzi", "Butler service", "Panoramic view"],
