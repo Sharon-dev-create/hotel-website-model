@@ -9,6 +9,7 @@ const ROOMS = [
   {
     name:     "Deluxe Room",
     slug:     "deluxe",
+    image:    "/images/rooms/room1.webp",
     price:    "₦35,000",
     per:      "per night",
     tagline:  "Comfort redefined",
