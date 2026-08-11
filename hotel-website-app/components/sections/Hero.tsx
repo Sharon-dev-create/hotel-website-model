@@ -17,42 +17,29 @@ export function Hero() {
         overflow:       "hidden",
       }}
     >
-      {/* Background */}
-      <div style={{
-        position:   "absolute",
-        inset:      0,
-        background: "linear-gradient(135deg, #1a1208 0%, #0B0B0B 50%, #0d0d12 100%)",
-      }} />
+      {/* Real hotel photo */}
+<div style={{
+  position:           "absolute",
+  inset:              0,
+  backgroundImage:    "url('/images/homepage-image.webp')",
+  backgroundSize:     "cover",
+  backgroundPosition: "center 40%",
+  backgroundRepeat:   "no-repeat",
+}} />
 
-      {/* Gold vertical accent */}
-      <div style={{
-        position:   "absolute",
-        top:        "20%",
-        right:      "8%",
-        width:      "1px",
-        height:     "200px",
-        background: "linear-gradient(to bottom, transparent, var(--gold), transparent)",
-        opacity:    0.4,
-      }} />
+{/* Dark overlay — makes text readable over the bright garden photo */}
+<div style={{
+  position:   "absolute",
+  inset:      0,
+  background: "linear-gradient(to bottom, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0.80) 100%)",
+}} />
 
-      {/* Gold horizontal accent */}
-      <div style={{
-        position:   "absolute",
-        bottom:     "25%",
-        left:       "8%",
-        width:      "80px",
-        height:     "1px",
-        background: "linear-gradient(to right, transparent, var(--gold), transparent)",
-        opacity:    0.4,
-      }} />
-
-      {/* Overlay pattern */}
-      <div style={{
-        position:        "absolute",
-        inset:           0,
-        backgroundImage: `radial-gradient(circle at 20% 50%, rgba(201,162,39,0.04) 0%, transparent 50%),
-                          radial-gradient(circle at 80% 20%, rgba(201,162,39,0.03) 0%, transparent 40%)`,
-      }} />
+{/* Gold tint overlay — ties into brand color */}
+<div style={{
+  position:   "absolute",
+  inset:      0,
+  background: "radial-gradient(ellipse at 30% 60%, rgba(201,162,39,0.08) 0%, transparent 60%)",
+}} />
 
       {/* Content */}
       <div style={{
