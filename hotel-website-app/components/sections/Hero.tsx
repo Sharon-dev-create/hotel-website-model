@@ -22,7 +22,7 @@ export function Hero() {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: "url('/images/homepage-image.webp')",
+          backgroundImage: "url('/images/homepage-Image.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center 40%",
           backgroundRepeat: "no-repeat",

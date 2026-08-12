@@ -9,7 +9,7 @@ const ROOMS = [
   {
     name: "Deluxe Room",
     slug: "deluxe",
-    image: "/images/rooms/room1.webp",
+    image: "/images/room1.webp",
     price: "₦35,000",
     per: "per night",
     tagline: "Comfort redefined",
@@ -23,7 +23,7 @@ const ROOMS = [
   {
     name: "Executive Room",
     slug: "executive",
-    image: "/images/rooms/room2.webp",
+    image: "/images/room2.webp",
     price: "₦55,000",
     per: "per night",
     tagline: "For the discerning traveler",
@@ -38,7 +38,7 @@ const ROOMS = [
     name: "Suite",
     price: "₦90,000",
     slug: "suite",
-    image: "/images/rooms/room3.webp",
+    image: "/images/room3.jpg",
     per: "per night",
     tagline: "The pinnacle of luxury",
     features: [
