@@ -60,9 +60,9 @@ export function About() {
             color:        "rgba(255,255,255,0.6)",
             marginBottom: "20px",
           }}>
-            Novel Suite was born from a simple belief — that every traveler
-            deserves more than just a room. Nestled in the heart of Jos, we
-            offer a retreat where modern comfort meets warm Nigerian hospitality.
+           Novel Suite offers a welcoming retreat in the heart of Jos, combining
+           comfortable accommodation with warm hospitality for both business
+           and leisure travelers.
           </p>
 
           <p style={{
@@ -70,9 +70,8 @@ export function About() {
             lineHeight: 1.8,
             color:     "rgba(255,255,255,0.6)",
           }}>
-            Whether you are here for business, leisure, or simply to experience
-            the cool highlands of Plateau State, Novel Suite is your home away
-            from home.
+            Whether you are visiting Plateau State for work or to explore the
+            city, our team is here to make your stay as comfortable as possible.
           </p>
 
           {/* Stats */}
