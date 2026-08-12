@@ -10,7 +10,7 @@ This project was developed as a hospitality website prototype and sales demonstr
 
 ## 🌐 Live Demo
 
-**Live Website:** [Add your Vercel URL here]
+**Live Website:** [https://hotel-website-model-six.vercel.app/]
 
 **GitHub Repository:** [Add your GitHub repository URL here]
 
