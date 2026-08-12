@@ -85,8 +85,8 @@ export function About() {
             borderTop:     "1px solid rgba(255,255,255,0.08)",
           }}>
             {[
-              { value: "50+",  label: "Elegant Rooms"     },
-              { value: "24/7", label: "Guest Services"    },
+              { value: "24/7",  label: "Elegant Rooms"     },
+              { value: "Jos", label: "Plateau State"    },
               { value: "5★",   label: "Guest Experience"  },
             ].map(({ value, label }) => (
               <div key={label}>
