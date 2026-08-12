@@ -46,7 +46,6 @@ The goal is to create a visually appealing, mobile-friendly, and conversion-focu
 A visually engaging homepage designed to communicate the hotel's atmosphere and encourage visitors to explore the property.
 
 🛏️ Room Showcase
-
 A dedicated section for displaying hotel rooms and accommodation options.
 
 Guests can view:
@@ -57,11 +56,9 @@ Room descriptions
 Room features
 Booking or enquiry options
 ✨ Amenities Section
-
 A clear presentation of the hotel's facilities and services.
 
 Depending on the final hotel implementation, this may include:
-
 Wi-Fi
 Restaurant
 Parking
@@ -76,9 +73,7 @@ Security
 Hotel amenities should be verified and approved by the hotel before production deployment.
 
 📸 Image Gallery
-
 A visual gallery designed to showcase:
-
 Hotel exterior
 Rooms
 Restaurant
@@ -88,7 +83,6 @@ Guest experience
 📍 Location & Contact
 
 Visitors can easily access important hotel information, including:
-
 Location
 Phone number
 Email
@@ -101,19 +95,15 @@ A simple booking flow that allows potential guests to quickly contact the hotel 
 This provides a low-friction alternative to implementing a complete booking system in the initial version.
 
 📱 Fully Responsive Design
-
 The website is designed to work across:
-
 Mobile devices
 Tablets
 Laptops
 Desktop screens
 ✨ Smooth Animations
-
 Subtle animations and transitions are used to improve the browsing experience without distracting from the hotel's content.
 
 ⚡ Performance-Focused
-
 The project uses modern web technologies to provide a fast and optimized user experience.
 
 🛠️ Tech Stack
@@ -129,7 +119,6 @@ Vercel	Deployment and hosting
 📈 Potential Business Benefits
 
 A dedicated hotel website can help a hospitality business:
-
 Improve its online presence
 Build brand credibility
 Showcase rooms and facilities professionally
@@ -143,17 +132,13 @@ Improve accessibility for potential guests searching online
 The project can be expanded with additional features depending on the hotel's needs.
 
 🗓️ Real-Time Room Availability
-
 Allow guests to view available rooms for selected dates.
 
 💳 Online Payments
-
 Integrate secure payment options for reservations.
 
 🏨 Complete Booking System
-
 Allow guests to:
-
 Select check-in and check-out dates
 Choose rooms
 View availability
@@ -172,18 +157,14 @@ Website content
 📧 Automated Booking Confirmations
 
 Send booking confirmations through:
-
 Email
 SMS
 WhatsApp
 🗺️ Google Maps Integration
-
 Provide interactive directions to the hotel.
 
 📊 Analytics
-
 Track:
-
 Website visitors
 Popular pages
 Booking enquiries
@@ -191,7 +172,6 @@ Conversion rates
 🔍 SEO Optimization
 
 Optimize the website for relevant searches such as:
-
 Hotels in Jos
 Best hotels in Jos
 Accommodation in Jos
@@ -200,22 +180,18 @@ Conference hotels in Jos
 📝 Content Management System
 
 Allow hotel staff to update:
-
 Rooms
 Prices
 Images
 Amenities
 Promotions
 Announcements
-
 without requiring a developer.
 
 ⚠️ Use of Hotel Branding and Assets
-
 This project may use hotel names, images, descriptions, or other publicly available information strictly for the purpose of demonstrating a proposed website concept.
 
 This project is:
-
 Not an official hotel website
 Not affiliated with or endorsed by the hotel unless formally agreed
 Intended as a design and development demonstration
