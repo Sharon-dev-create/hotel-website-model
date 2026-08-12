@@ -134,6 +134,14 @@ export function Footer() {
           <span style={{ fontSize: "12px", color: "var(--grey)" }}>
              {new Date().getFullYear()} Novel Suite. All rights reserved.
           </span>
+          <span style={{
+        fontSize:      "11px",
+        color:         "rgba(255,255,255,0.18)",
+        fontStyle:     "italic",
+        letterSpacing: "0.02em",
+  }}>
+    Website concept &amp; demo created for Novel Suite
+  </span>
           <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>
             Jos · Plateau State · Nigeria
           </span>
