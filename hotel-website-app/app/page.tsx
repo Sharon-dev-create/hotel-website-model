@@ -8,6 +8,7 @@ import { CTA }          from "@/components/sections/CTA";
 import { Booking }      from "@/components/sections/Booking";
 import { Contact }      from "@/components/sections/Contact";
 import { Footer }       from "@/components/sections/Footer";
+import { Gallery }      from "@/components/sections/Gallery";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Rooms />
+      <Gallery />
       <Amenities />
       <Testimonials />
       <CTA />
