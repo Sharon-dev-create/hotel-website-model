@@ -68,7 +68,7 @@ export function About() {
             lineHeight: 1.8,
             color:     "rgba(255,255,255,0.6)",
           }}>
-            Whether visiting Plateau State for work or leisure, the hotel concept focuses on comfort, convenience, and a welcoming atmosphere. Replace with verified hotel details when available.
+            Whether visiting Plateau State for work or leisure, the hotel concept focuses on comfort, convenience, and a welcoming atmosphere.
           </p>
 
           {/* Stats */}
