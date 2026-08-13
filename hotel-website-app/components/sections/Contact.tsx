@@ -152,22 +152,23 @@ export function Contact() {
             <div style={{
               width:        "100%",
               aspectRatio:  "4/3",
-              background:   "#111",
-              border:       "1px solid rgba(255,255,255,0.06)",
               borderRadius: "4px",
               overflow:     "hidden",
               position:     "relative",
-              display:      "flex",
-              alignItems:   "center",
-              justifyContent:"center",
-              padding:      "24px",
             }}>
-              <div style={{ textAlign: "center", color: "var(--grey)", maxWidth: "420px" }}>
-                <div style={{ fontSize: "16px", color: "#fff", marginBottom: "6px" }}>Map Placeholder</div>
-                <div>{hotelConfig.locationShort}</div>
-                <div style={{ marginTop: "8px", fontSize: "13px", color: "var(--grey)" }}>
-                  Map integration can be configured with the hotel&apos;s exact coordinates. No coordinates have been added in this demo.
-                </div>
+              <iframe
+                src="https://www.google.com/maps?q=Atiku+Junction,+Rayfield,+Jos,+Plateau+State,+Nigeria&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "260px", filter: "grayscale(100%) invert(90%) contrast(90%)" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Xceptional Place Hotel location (demo)"
+              />
+
+              <div style={{ padding: "12px 14px", textAlign: "center", color: "var(--grey)", fontSize: "13px" }}>
+                Demo map centered on Atiku Junction, Rayfield, Jos. Replace with exact coordinates or your preferred map provider.
               </div>
             </div>
           </motion.div>
