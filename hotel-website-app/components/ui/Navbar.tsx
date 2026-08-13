@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link                    from "next/link";
 import { Menu, X }             from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { hotelConfig } from "../../lib/hotelConfig";
 
 const LINKS = [
   { label: "Home",      href: "#home"      },
@@ -53,21 +54,21 @@ export function Navbar() {
             <div>
               <span style={{
                 fontFamily:    "var(--font-playfair)",
-                fontSize:      "22px",
+                fontSize:      "18px",
                 fontWeight:    600,
                 color:         "#fff",
                 letterSpacing: "-0.01em",
               }}>
-                Novel
+                {hotelConfig.name.split(" ")[0]}
               </span>
               <span style={{
                 fontFamily:  "var(--font-playfair)",
-                fontSize:    "22px",
+                fontSize:    "18px",
                 fontWeight:  400,
                 color:       "var(--gold)",
-                marginLeft:  "5px",
+                marginLeft:  "6px",
               }}>
-                Suite
+                {hotelConfig.name.replace(hotelConfig.name.split(" ")[0] + " ", "")}
               </span>
             </div>
           </Link>
@@ -114,7 +115,7 @@ export function Navbar() {
               onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.opacity = "0.85"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.opacity = "1"; }}
             >
-              Book Now
+              Book Your Stay
             </a>
           </nav>
 

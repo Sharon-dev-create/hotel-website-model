@@ -15,10 +15,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Novel Suite — Luxury Hotel in Jos",
+  title: "Xceptional Place Hotel | Jos, Plateau State",
   description:
-    "Experience comfort in the heart of Jos. Elegant rooms, exceptional service, and a peaceful atmosphere for business and leisure travelers.",
-  keywords: "hotel Jos, luxury hotel Nigeria, Novel Suite, accommodation Jos Plateau",
+    "Website concept for Xceptional Place Hotel, Atiku Junction, Rayfield, Jos, Plateau State.",
+  keywords: "Xceptional Place Hotel, Jos, Plateau State, hotel concept",
 };
 
 export default function RootLayout({

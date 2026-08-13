@@ -9,9 +9,9 @@ import { X, ZoomIn } from "lucide-react";
 const IMAGES = [
   {
     src:     "/images/homepage-Image.webp",
-    alt:     "Novel Suite grounds and entrance",
+    alt:     "Hotel grounds and entrance",
     caption: "Hotel Grounds",
-    span:    "wide",   // takes 2 columns
+    span:    "wide",
   },
   {
     src:     "/images/room1.webp",
@@ -63,10 +63,10 @@ export function Gallery() {
               <div style={{ width: "32px", height: "1px", background: "var(--gold)" }} />
             </div>
             <h2 style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 400, color: "#fff", marginBottom: "16px" }}>
-              Experience Novel Suite
+              Experience {"Xceptional Place Hotel"}
             </h2>
             <p style={{ fontSize: "15px", color: "var(--grey)", lineHeight: 1.7, maxWidth: "440px", margin: "0 auto" }}>
-              A glimpse into the comfort and elegance that awaits you.
+              A curated gallery to showcase the hotel&apos;s spaces. Replace these images with official photography when available.
             </p>
           </motion.div>
 

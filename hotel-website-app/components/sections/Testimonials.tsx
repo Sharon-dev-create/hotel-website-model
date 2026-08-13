@@ -65,44 +65,7 @@ export function Testimonials() {
             lineHeight:   1.6,
             marginBottom: "32px",
           }}>
-            &ldquo;Read what our guests are saying about their experience at Novel Suite.&rdquo;
-          </p>
-
-          <a
-            href="https://www.google.com/search?q=Novel+Suite+Jos+reviews"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display:        "inline-flex",
-              alignItems:     "center",
-              gap:            "8px",
-              padding:        "12px 28px",
-              background:     "transparent",
-              color:          "var(--gold)",
-              border:         "1px solid var(--gold)",
-              fontSize:       "12px",
-              fontWeight:     700,
-              letterSpacing:  "0.1em",
-              textTransform:  "uppercase",
-              textDecoration: "none",
-              borderRadius:   "2px",
-              transition:     "all 0.2s",
-            }}
-            onMouseEnter={e => {
-              (e.currentTarget as HTMLAnchorElement).style.background = "var(--gold)";
-              (e.currentTarget as HTMLAnchorElement).style.color      = "#0B0B0B";
-            }}
-            onMouseLeave={e => {
-              (e.currentTarget as HTMLAnchorElement).style.background = "transparent";
-              (e.currentTarget as HTMLAnchorElement).style.color      = "var(--gold)";
-            }}
-          >
-            <ExternalLink size={14} />
-            Read Reviews on Google
-          </a>
-
-          <p style={{ fontSize: "11px", color: "var(--grey)", marginTop: "20px" }}>
-            Verified reviews from Google · Novel Suite, Jos
+            Reviews and testimonials can be integrated here. Use verified sources (Google, TripAdvisor, etc.) when available.
           </p>
         </motion.div>
       </div>

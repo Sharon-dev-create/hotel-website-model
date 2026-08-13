@@ -60,9 +60,7 @@ export function About() {
             color:        "rgba(255,255,255,0.6)",
             marginBottom: "20px",
           }}>
-           Novel Suite offers a welcoming retreat in the heart of Jos, combining
-           comfortable accommodation with warm hospitality for both business
-           and leisure travelers.
+           Xceptional Place Hotel is a new hospitality destination in Rayfield, Jos, created to provide guests with a comfortable and welcoming place to stay.
           </p>
 
           <p style={{
@@ -70,45 +68,18 @@ export function About() {
             lineHeight: 1.8,
             color:     "rgba(255,255,255,0.6)",
           }}>
-            Whether you are visiting Plateau State for work or to explore the
-            city, our team is here to make your stay as comfortable as possible.
+            Whether visiting Plateau State for work or leisure, the hotel concept focuses on comfort, convenience, and a welcoming atmosphere. Replace with verified hotel details when available.
           </p>
 
           {/* Stats */}
           <div style={{
-            display:       "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap:           "24px",
             marginTop:     "48px",
             paddingTop:    "40px",
             borderTop:     "1px solid rgba(255,255,255,0.08)",
           }}>
-            {[
-              { value: "24/7",  label: "Elegant Rooms"     },
-              { value: "Jos", label: "Plateau State"    },
-              { value: "5★",   label: "Guest Experience"  },
-            ].map(({ value, label }) => (
-              <div key={label}>
-                <div style={{
-                  fontFamily:    "var(--font-playfair)",
-                  fontSize:      "32px",
-                  fontWeight:    400,
-                  color:         "var(--gold)",
-                  marginBottom:  "6px",
-                }}>
-                  {value}
-                </div>
-                <div style={{
-                  fontSize:      "11px",
-                  fontWeight:    600,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  color:         "var(--grey)",
-                }}>
-                  {label}
-                </div>
-              </div>
-            ))}
+            <div style={{ fontSize: "14px", color: "var(--grey)" }}>
+              Value propositions: Comfort · Convenience · Exceptional Hospitality · Easy Booking
+            </div>
           </div>
         </motion.div>
 

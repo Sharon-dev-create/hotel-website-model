@@ -3,6 +3,7 @@
 import { motion }    from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef }    from "react";
+import { hotelConfig } from "../../lib/hotelConfig";
 
 export function CTA() {
   const ref    = useRef(null);
@@ -55,7 +56,7 @@ export function CTA() {
           marginBottom: "40px",
           lineHeight:   1.7,
         }}>
-          Book your room today and experience the Novel Suite difference.
+          Book your room today and discover what {hotelConfig.name} has to offer.
         </p>
 
         <a
@@ -84,7 +85,7 @@ export function CTA() {
             (e.currentTarget as HTMLAnchorElement).style.transform  = "translateY(0)";
           }}
         >
-          Book Now
+          Book Your Stay
         </a>
       </motion.div>
     </section>

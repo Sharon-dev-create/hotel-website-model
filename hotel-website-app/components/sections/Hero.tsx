@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { hotelConfig } from "../../lib/hotelConfig";
 
 export function Hero() {
   return (
@@ -83,7 +84,7 @@ export function Hero() {
               color: "var(--gold)",
             }}
           >
-            Jos, Plateau State · Nigeria
+            {hotelConfig.location}
           </span>
           <div
             style={{ width: "40px", height: "1px", background: "var(--gold)" }}
@@ -105,10 +106,10 @@ export function Hero() {
             marginBottom: "24px",
           }}
         >
-          Experience Comfort
+          Experience Exceptional Hospitality in Jos
           <br />
           <span style={{ color: "var(--gold)", fontStyle: "italic" }}>
-            in the Heart of Jos
+            Your Exceptional Stay Begins Here
           </span>
         </motion.h1>
 
@@ -125,8 +126,7 @@ export function Hero() {
             maxWidth: "600px",
           }}
         >
-          Elegant rooms, exceptional service, and a peaceful atmosphere for
-          business and leisure travelers.
+          Discover comfort, convenience, and exceptional hospitality at {hotelConfig.name}, Rayfield, Jos.
         </motion.p>
 
         {/* CTAs */}
@@ -142,7 +142,7 @@ export function Hero() {
           }}
         >
           <a
-            href="#booking"
+            href={hotelConfig.whatsapp ? `https://wa.me/${hotelConfig.whatsapp}` : "#contact"}
             style={{
               padding: "16px 40px",
               background: "var(--gold)",

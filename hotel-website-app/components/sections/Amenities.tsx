@@ -9,14 +9,14 @@ import {
 } from "lucide-react";
 
 const AMENITIES = [
-  { icon: Wifi,             label: "High-Speed Wi-Fi",        desc: "Complimentary in all rooms and public areas"    },
-  { icon: UtensilsCrossed,  label: "Restaurant",              desc: "Serving Nigerian and continental cuisine daily" },
-  { icon: Coffee,           label: "Free Breakfast",          desc: "Full breakfast included with every booking"     },
-  { icon: Car,              label: "Free Parking",            desc: "Secure on-site parking for all guests"          },
-  { icon: ConciergeBell,    label: "Room Service",            desc: "In-room dining available around the clock"      },
-  { icon: Shirt,            label: "Laundry Service",         desc: "Same-day laundry and dry cleaning"              },
-  { icon: Clock,            label: "24-hr Front Desk",        desc: "Our team is always available to assist you"     },
-  { icon: Presentation,     label: "Meeting Space",           desc: "Fully equipped rooms for conferences and events" },
+  { icon: Wifi,             label: "High-Speed Wi-Fi",        desc: "Placeholder — replace with verified details." },
+  { icon: UtensilsCrossed,  label: "Restaurant & Dining",     desc: "Placeholder — describe dining options here."  },
+  { icon: Coffee,           label: "Breakfast",               desc: "Placeholder — describe breakfast offerings."  },
+  { icon: Car,              label: "Parking",                 desc: "Placeholder — parking details can be added."   },
+  { icon: ConciergeBell,    label: "Guest Services",          desc: "Placeholder — describe guest services."       },
+  { icon: Shirt,            label: "Laundry",                 desc: "Placeholder — laundry and housekeeping info."  },
+  { icon: Clock,            label: "Reception Hours",         desc: "Placeholder — replace with actual opening hours." },
+  { icon: Presentation,     label: "Events & Meetings",       desc: "Placeholder — event and meeting facilities."   },
 ];
 
 export function Amenities() {

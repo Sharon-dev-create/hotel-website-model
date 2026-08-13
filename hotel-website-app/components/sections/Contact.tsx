@@ -4,6 +4,7 @@ import { motion }    from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef }    from "react";
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
+import { hotelConfig } from "../../lib/hotelConfig";
 
 export function Contact() {
   const ref    = useRef(null);
@@ -60,35 +61,35 @@ export function Contact() {
               {
                 icon:  MapPin,
                 label: "Location",
-                value: "Jos, Plateau State, Nigeria",
-                sub:   "City center — easily accessible",
+                value: hotelConfig.location,
+                sub:   "Atiku Junction, Rayfield — replace with exact details",
               },
               {
                 icon:  Phone,
                 label: "Phone",
-                value: "+234 800 000 0000",
-                sub:   "Available 24 hours a day",
-                href:  "tel:+2348000000000",
+                value: hotelConfig.phone || "Not configured",
+                sub:   "Configure via environment variable",
+                href:  hotelConfig.phone ? `tel:${hotelConfig.phone}` : undefined,
               },
               {
                 icon:  MessageCircle,
                 label: "WhatsApp",
-                value: "+234 800 000 0000",
-                sub:   "Quick responses via WhatsApp",
-                href:  "https://wa.me/2348000000000",
+                value: hotelConfig.whatsapp ? hotelConfig.whatsapp : "Not configured",
+                sub:   "Configure via NEXT_PUBLIC_HOTEL_WHATSAPP",
+                href:  hotelConfig.whatsapp ? `https://wa.me/${hotelConfig.whatsapp}` : undefined,
               },
               {
                 icon:  Mail,
                 label: "Email",
-                value: "info@novelsuite.com",
-                sub:   "We reply within a few hours",
-                href:  "mailto:info@novelsuite.com",
+                value: hotelConfig.email || "Not configured",
+                sub:   "Configure via NEXT_PUBLIC_HOTEL_EMAIL",
+                href:  hotelConfig.email ? `mailto:${hotelConfig.email}` : undefined,
               },
               {
                 icon:  Clock,
                 label: "Front Desk Hours",
-                value: "Open 24 / 7",
-                sub:   "Always here when you need us",
+                value: "Business hours configurable",
+                sub:   "Replace with verified opening hours",
               },
             ].map(({ icon: Icon, label, value, sub, href }) => (
               <div key={label} style={{ display: "flex", gap: "16px" }}>
@@ -156,16 +157,18 @@ export function Contact() {
               borderRadius: "4px",
               overflow:     "hidden",
               position:     "relative",
+              display:      "flex",
+              alignItems:   "center",
+              justifyContent:"center",
+              padding:      "24px",
             }}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126021.24488571878!2d8.822000!3d9.908769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10535400000000001%3A0x0!2sJos%2C%20Plateau%20State%2C%20Nigeria!5e0!3m2!1sen!2s!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: "grayscale(100%) invert(90%) contrast(90%)" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <div style={{ textAlign: "center", color: "var(--grey)", maxWidth: "420px" }}>
+                <div style={{ fontSize: "16px", color: "#fff", marginBottom: "6px" }}>Map Placeholder</div>
+                <div>{hotelConfig.locationShort}</div>
+                <div style={{ marginTop: "8px", fontSize: "13px", color: "var(--grey)" }}>
+                  Map integration can be configured with the hotel&apos;s exact coordinates. No coordinates have been added in this demo.
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
