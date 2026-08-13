@@ -97,7 +97,7 @@ export function Footer() {
               <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
                 <Phone size={14} color="var(--gold)" />
                 <span style={{ fontSize: "13px", color: "var(--grey)" }}>
-                  {hotelConfig.phone || "Contact for rates and booking"}
+                  {hotelConfig.phone || hotelConfig.phoneDemo}
                 </span>
               </div>
             </div>

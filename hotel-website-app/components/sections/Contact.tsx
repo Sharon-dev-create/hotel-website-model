@@ -67,29 +67,29 @@ export function Contact() {
               {
                 icon:  Phone,
                 label: "Phone",
-                value: hotelConfig.phone || "Not configured",
-                sub:   "Configure via environment variable",
+                value: hotelConfig.phone || hotelConfig.phoneDemo,
+                sub:   hotelConfig.phone ? "Available" : "Demo contact",
                 href:  hotelConfig.phone ? `tel:${hotelConfig.phone}` : undefined,
               },
               {
                 icon:  MessageCircle,
                 label: "WhatsApp",
-                value: hotelConfig.whatsapp ? hotelConfig.whatsapp : "Not configured",
-                sub:   "Configure via NEXT_PUBLIC_HOTEL_WHATSAPP",
+                value: hotelConfig.whatsapp ? hotelConfig.whatsapp : hotelConfig.whatsappDemo,
+                sub:   hotelConfig.whatsapp ? "Chat on WhatsApp" : "Demo contact",
                 href:  hotelConfig.whatsapp ? `https://wa.me/${hotelConfig.whatsapp}` : undefined,
               },
               {
                 icon:  Mail,
                 label: "Email",
-                value: hotelConfig.email || "Not configured",
-                sub:   "Configure via NEXT_PUBLIC_HOTEL_EMAIL",
+                value: hotelConfig.email || hotelConfig.emailDemo,
+                sub:   hotelConfig.email ? "Email us" : "Demo contact",
                 href:  hotelConfig.email ? `mailto:${hotelConfig.email}` : undefined,
               },
               {
                 icon:  Clock,
                 label: "Front Desk Hours",
-                value: "Business hours configurable",
-                sub:   "Replace with verified opening hours",
+                value: hotelConfig.frontDeskHoursDemo,
+                sub:   "Demo hours — replace with actual hours",
               },
             ].map(({ icon: Icon, label, value, sub, href }) => (
               <div key={label} style={{ display: "flex", gap: "16px" }}>

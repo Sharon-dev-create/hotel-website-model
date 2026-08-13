@@ -4,7 +4,8 @@ import { useState }  from "react";
 import { motion }    from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef }    from "react";
-import { Calendar, Users, Send } from "lucide-react";
+import { Send } from "lucide-react";
+import { hotelConfig } from "../../lib/hotelConfig";
 
 export function Booking() {
   const ref    = useRef(null);
@@ -28,6 +29,33 @@ export function Booking() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    // Build message
+    const msgLines = [
+      `Booking enquiry for ${hotelConfig.name}`,
+      ``,
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Phone: ${form.phone}`,
+      `Room Type: ${form.roomType}`,
+      `Check-in: ${form.checkin}`,
+      `Check-out: ${form.checkout}`,
+      `Guests: ${form.guests}`,
+      `Special requests: ${form.requests || "None"}`,
+    ];
+    const message = msgLines.join("\n");
+
+    // If WhatsApp configured, open WhatsApp chat with prefilled message
+    if (hotelConfig.whatsapp) {
+      const waUrl = `https://wa.me/${hotelConfig.whatsapp}?text=${encodeURIComponent(message)}`;
+      window.open(waUrl, "_blank");
+    } else {
+      // Fallback to email (use configured email or demo email)
+      const to = hotelConfig.email || hotelConfig.emailDemo;
+      const subject = `Booking enquiry from ${form.name || "Website"}`;
+      const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+      window.location.href = mailto;
+    }
+
     setSubmitted(true);
   }
 
@@ -198,9 +226,10 @@ export function Booking() {
                   onFocus={e => (e.target.style.borderBottomColor = "var(--gold)")}
                   onBlur={e  => (e.target.style.borderBottomColor = "rgba(255,255,255,0.15)")}
                 >
-                  <option value="Deluxe Room">Deluxe Room — ₦35,000/night</option>
-                  <option value="Executive Room">Executive Room — ₦55,000/night</option>
-                  <option value="Suite">Suite — ₦90,000/night</option>
+                  <option value="Standard Room">Standard Room</option>
+                  <option value="Deluxe Room">Deluxe Room</option>
+                  <option value="Executive Room">Executive Room</option>
+                  <option value="Premium Suite">Premium Suite</option>
                 </select>
               </div>
             </div>
