@@ -41,17 +41,6 @@ export function Hero() {
         }}
       />
 
-      {/* Gold tint overlay — ties into brand color */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          zIndex: 1,
-          background:
-            "radial-gradient(ellipse at 30% 60%, rgba(201,162,39,0.08) 0%, transparent 60%)",
-        }}
-      />
-
       {/* Content */}
       <div
         style={{
