@@ -22,7 +22,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          style={{ marginBottom: "64px" }}
+          style={{ marginBottom: "90px" }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
             <div style={{ width: "32px", height: "1px", background: "var(--gold)" }} />

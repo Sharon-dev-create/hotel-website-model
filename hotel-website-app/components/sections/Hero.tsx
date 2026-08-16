@@ -94,7 +94,7 @@ export function Hero() {
             lineHeight: 1.1,
             letterSpacing: "-0.02em",
             color: "#fff",
-            marginBottom: "24px",
+            marginBottom: "48px",
           }}
         >
           Experience Exceptional Hospitality in Jos
