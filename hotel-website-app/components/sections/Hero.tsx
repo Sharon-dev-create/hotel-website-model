@@ -35,6 +35,7 @@ export function Hero() {
         style={{
           position: "absolute",
           inset: 0,
+          zIndex: 1,
           background:
             "linear-gradient(to bottom, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0.80) 100%)",
         }}
@@ -45,6 +46,7 @@ export function Hero() {
         style={{
           position: "absolute",
           inset: 0,
+          zIndex: 1,
           background:
             "radial-gradient(ellipse at 30% 60%, rgba(201,162,39,0.08) 0%, transparent 60%)",
         }}
